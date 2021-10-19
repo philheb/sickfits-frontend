@@ -1,11 +1,12 @@
 import React from 'react';
+import CreateProduct from '../components/CreateProduct';
 
 const SellPage = () => {
   return (
     <div>
-      <p>Sell</p>
+      <CreateProduct />
     </div>
   );
-}
+};
 
 export default SellPage;

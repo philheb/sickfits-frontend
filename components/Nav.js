@@ -1,12 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
+import NavStyles from './styles/NavStyles';
+
 const Nav = () => {
   return (
-    <nav>
+    <NavStyles>
       <Link href="/products">Product</Link>
       <Link href="/sell">Sell</Link>
       <Link href="/orders">Orders</Link>
       <Link href="/account">Account</Link>
-    </nav>
+    </NavStyles>
   );
 };
 
