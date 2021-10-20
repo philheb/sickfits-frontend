@@ -60,13 +60,13 @@ const Form = styled.form`
       background-image: linear-gradient(
         to right,
         #ff3019 0%,
-        #e2b04a 50%,
+        #880000 50%,
         #ff3019 100%
       );
     }
     &[aria-busy='true']::before {
       background-size: 50% auto;
-      animation: ${loading} 0.5s linear infinite;
+      animation: ${loading} 0.9s linear infinite;
     }
   }
 `;
