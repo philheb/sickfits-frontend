@@ -20,7 +20,24 @@ const ErrorStyles = styled.div`
 
 const DisplayError = ({ error }) => {
   if (!error || !error.message) return null;
-  if (error.networkError && error.networkError.result && error.networkError.result.errors.length) {
+  if (
+    error.message ===
+    '[password:minLength:User:password] Value must be at least 8 characters long.'
+  ) {
+    return (
+      <ErrorStyles>
+        <p data-test="graphql-error">
+          <strong>Shoot!</strong>
+          Value must be at least 8 characters long.
+        </p>
+      </ErrorStyles>
+    );
+  }
+  if (
+    error.networkError &&
+    error.networkError.result &&
+    error.networkError.result.errors.length
+  ) {
     return error.networkError.result.errors.map((error, i) => (
       <ErrorStyles key={i}>
         <p data-test="graphql-error">
