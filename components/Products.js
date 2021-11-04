@@ -28,7 +28,6 @@ const ProductsListStyles = styled.div`
 `;
 
 const Products = ({ page }) => {
-  console.log('page:', page, 'perPage:', perPage);
   const { loading, error, data } = useQuery(ALL_PRODUCTS_QUERY, {
     variables: {
       skip: page * perPage - perPage,
@@ -37,7 +36,6 @@ const Products = ({ page }) => {
   });
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
-  console.log(data);
   return (
     <div>
       <ProductsListStyles>
