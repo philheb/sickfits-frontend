@@ -19,6 +19,9 @@ const ItemStyles = styled.div`
     padding: 0 3rem;
     font-size: 1.5rem;
   }
+  button {
+    cursor: pointer;
+  }
   .buttonList {
     display: grid;
     width: 100%;
