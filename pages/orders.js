@@ -1,11 +1,12 @@
 import React from 'react';
+import Orders from '../components/Orders';
 
 const OrderPage = () => {
   return (
     <div>
-      <p>Orders</p>
+      <Orders />
     </div>
   );
-}
+};
 
 export default OrderPage;
