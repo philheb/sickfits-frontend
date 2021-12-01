@@ -10,7 +10,7 @@ const Nav = () => {
   const { openCart } = useCart();
   return (
     <NavStyles>
-      <Link href="/products">Product</Link>
+      <Link href="/products">Products</Link>
       {user && (
         <>
           <Link href="/sell">Sell</Link>

@@ -15,3 +15,19 @@ exports[`<CartCount /> Matches snapshot 1`] = `
   </span>
 </div>
 `;
+
+exports[`<CartCount /> updates via props 1`] = `
+<div>
+  <span
+    class="CartCount__AnimationStyles-xxvp4g-1 gaipoK"
+  >
+    <div>
+      <div
+        class="CartCount__Dot-xxvp4g-0 eJulvk count count-enter-done"
+      >
+        12
+      </div>
+    </div>
+  </span>
+</div>
+`;
