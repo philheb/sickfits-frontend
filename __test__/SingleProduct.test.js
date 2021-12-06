@@ -22,7 +22,7 @@ const mocks = [
 
 describe('<SingleProduct />', () => {
   it('renders with proper data', async () => {
-    const { container, debug } = render(
+    const { container } = render(
       <MockedProvider mocks={mocks}>
         <SingleProduct id="123" />
       </MockedProvider>

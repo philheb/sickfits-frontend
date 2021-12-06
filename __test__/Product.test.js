@@ -7,7 +7,7 @@ const product = fakeItem();
 
 describe('<Product />', () => {
   it('renders out the price tag and title', () => {
-    const { container, debug } = render(
+    const { container } = render(
       <MockedProvider>
         <Product product={product} />
       </MockedProvider>
