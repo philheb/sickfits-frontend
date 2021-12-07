@@ -70,7 +70,6 @@ describe('<Nav />', () => {
     expect(container).toHaveTextContent('Sell');
     expect(container).toHaveTextContent('Orders');
     expect(container).toMatchSnapshot();
-    debug();
   });
   it('Renders the amount in the cart', async () => {
     const { container, debug } = render(
@@ -81,7 +80,6 @@ describe('<Nav />', () => {
       </CartStateProvider>
     );
     await screen.findByText('My Cart');
-    debug();
     expect(screen.getByText('3')).toBeInTheDocument();
   });
 });
