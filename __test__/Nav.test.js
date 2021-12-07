@@ -4,7 +4,6 @@ import Nav from '../components/Nav';
 import { CURRENT_USER_QUERY } from '../components/User';
 import { fakeUser, fakeCartItem } from '../lib/testUtils';
 import { CartStateProvider } from '../context/cartState';
-import wait from 'waait';
 
 // Logged Out
 const notSignedInMocks = [
