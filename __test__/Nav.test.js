@@ -64,6 +64,24 @@ describe('<Nav />', () => {
         </MockedProvider>
       </CartStateProvider>
     );
+    await screen.findByText('Account');
+    expect(container).toHaveTextContent('Sign out');
+    expect(container).toHaveTextContent('My Cart');
+    expect(container).toHaveTextContent('Sell');
+    expect(container).toHaveTextContent('Orders');
+    expect(container).toMatchSnapshot();
     debug();
+  });
+  it('Renders the amount in the cart', async () => {
+    const { container, debug } = render(
+      <CartStateProvider>
+        <MockedProvider mocks={signedInMocksWithCartItems}>
+          <Nav />
+        </MockedProvider>
+      </CartStateProvider>
+    );
+    await screen.findByText('My Cart');
+    debug();
+    expect(screen.getByText('3')).toBeInTheDocument();
   });
 });

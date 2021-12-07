@@ -3,7 +3,7 @@
 exports[`<SingleProduct /> renders with proper data 1`] = `
 <div>
   <div
-    class="SingleProduct__ProductStyles-sc-1kapz8w-0 djKfDa"
+    class="SingleProduct__ProductStyles-sc-1kapz8w-0 bqdWh"
     data-testid="singleProduct"
   >
     <img

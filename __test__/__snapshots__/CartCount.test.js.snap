@@ -3,11 +3,11 @@
 exports[`<CartCount /> Matches snapshot 1`] = `
 <div>
   <span
-    class="CartCount__AnimationStyles-xxvp4g-1 gaipoK"
+    class="CartCount__AnimationStyles-sc-xxvp4g-1 cWzEtw"
   >
     <div>
       <div
-        class="CartCount__Dot-xxvp4g-0 eJulvk count"
+        class="CartCount__Dot-sc-xxvp4g-0 fBoGuq count"
       >
         11
       </div>
@@ -19,11 +19,11 @@ exports[`<CartCount /> Matches snapshot 1`] = `
 exports[`<CartCount /> updates via props 1`] = `
 <div>
   <span
-    class="CartCount__AnimationStyles-xxvp4g-1 gaipoK"
+    class="CartCount__AnimationStyles-sc-xxvp4g-1 cWzEtw"
   >
     <div>
       <div
-        class="CartCount__Dot-xxvp4g-0 eJulvk count count-enter-done"
+        class="CartCount__Dot-sc-xxvp4g-0 fBoGuq count count-enter-done"
       >
         12
       </div>
